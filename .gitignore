@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+data/
+vectorstore/
+transcripts/
+chromasqlite3/
+*.json
+_init__.py
