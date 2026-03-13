@@ -1,8 +1,10 @@
 from pathlib import Path
 import json
 import re
+import os
 
 from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api.proxies import WebshareProxyConfig
 from youtube_transcript_api._errors import TranscriptsDisabled, VideoUnavailable
 
 
@@ -28,7 +30,11 @@ def clean_snippet_text(text: str) -> str:
 
 def fetch_transcript_segments(video_id: str):
     """Fetch transcript and keep per-snippet timestamps."""
-    ytt_api = YouTubeTranscriptApi()
+    proxy_config = WebshareProxyConfig(
+        proxy_username=os.environ["WEBSHARE_USERNAME"],
+        proxy_password=os.environ["WEBSHARE_PASSWORD"],
+    )
+    ytt_api = YouTubeTranscriptApi(proxy_config=proxy_config)
     transcript = ytt_api.fetch(video_id)
 
     segments = []
