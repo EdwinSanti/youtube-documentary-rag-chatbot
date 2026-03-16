@@ -43,7 +43,7 @@ Documentaries contain valuable information, but finding specific insights requir
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/doculens-ai.git
+git clone https://github.com/EdwinSanti/doculens-ai.git
 cd doculens-ai
 ```
 
@@ -120,7 +120,7 @@ See `requirements.txt` for complete dependencies including:
 - langchain
 - streamlit
 - youtube-transcript-api
-- chroma-db
+- chromadb
 - python-dotenv
 - langsmith
 
@@ -133,12 +133,7 @@ See `requirements.txt` for complete dependencies including:
 
 ## Deployment
 
-The application is deployed using Streamlit Cloud and includes:
-- Persistent vector database storage
-- Multi-video knowledge base management
-- Real-time transcript processing
-- Speech input capabilities
-- Production monitoring via LangSmith
+Previously deployed on Streamlit Cloud. Run locally using the instructions above.
 
 ## Project Context
 
@@ -148,7 +143,7 @@ Built as a demonstration of production-grade retrieval-augmented generation and 
 
 Edwin Alexis Santiago Rodríguez
 - AI Engineering Professional
-- GitHub: [github.com/yourusername](https://github.com/EdwinSanti)
+- GitHub: [github.com/EdwinSanti](https://github.com/EdwinSanti)
 - LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/edwin-santiago-rodr%C3%ADguez-8a520731a/)
 
 ## License
